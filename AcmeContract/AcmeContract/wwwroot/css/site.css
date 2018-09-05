@@ -27,24 +27,24 @@
 }
 
 
-#searchCriteriaPanel .time-picker input.display-time {
+.formPanel .time-picker input.display-time {
     width: 100%;
 }
 
-#searchCriteriaPanel .row {
+.formPanel .row {
     margin-bottom: 5px;
 }
 
-#searchCriteriaPanel .v-select {
+.formPanel .v-select {
     background-color: white;
 }
 
-#searchCriteriaPanel .labelTitle {
+.formPanel .labelTitle {
     font-weight: bold;
     color: lightskyblue;
 }
 
-#searchCriteriaPanel {
+.formPanel {
     border: 1px solid #ccc;
     border-radius: 10px;
     padding-bottom: 10px;
@@ -145,15 +145,15 @@ th.active {
         width: 1195px;
     }
 
-    /*#searchCriteriaPanel .row {
+    /*.formPanel .row {
         margin-bottom: 2px;
     }*/
 
-    #searchCriteriaPanel #txtCorrelationID, #txtEventID, #txtKeyWord {
+    .formPanel #txtCorrelationID, #txtEventID, #txtKeyWord {
         max-width: none;
     }
 
-    #searchCriteriaPanel .rightColumn {
+    .formPanel .rightColumn {
         padding-left: 60px;
     }
 }

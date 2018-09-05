@@ -43,7 +43,7 @@
         },
         movePages: function (amount) {
             var newStartRow = this.startRow + (amount * this.rowsPerPage);
-            if (newStartRow >= 0 && newStartRow < this.searchResults.length) {
+            if (newStartRow >= 0 && newStartRow < this.filteredData.length) {
                 this.startRow = newStartRow;
             }
         },
@@ -83,10 +83,12 @@
                     return (a === b ? 0 : a > b ? 1 : -1) * order
                 })
             }
-
+            return data;
+        },
+        dataAfterPaging: function () {            
+            this.filteredData
             var start = this.startRow * this.rowsPerPage;
-            return data.slice(this.startRow, this.startRow  +this.rowsPerPage)
-            return data
+            return this.filteredData.slice(this.startRow, this.startRow + this.rowsPerPage)
         }
     },
     created: function () {
